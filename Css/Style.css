@@ -159,6 +159,7 @@ section{
     background: linear-gradient(to bottom,#111,transparent);    
 }
 
+
 .temario{
     text-align: center;
 }
@@ -182,7 +183,7 @@ section{
     height: 480px;
     background: #191919;
     transition: 0.5s;
-    margin: 20px;
+    margin: 70px;
     margin-bottom: 120px;
 }
 
@@ -260,10 +261,11 @@ section{
     color: rgb(72, 49, 155);
 }
 
+
 @media(max-width: 767px){
     
     section {
-        padding: 40px;
+        padding: 30px;
     }
 
     .banner .content h2 {
@@ -286,16 +288,28 @@ section{
     }
 
     .about .imgBx {
-        min-height: 350px;
+        min-height: 500px;
     }
 
     .temario .temariolist .box {
         position: relative;
-        max-width: 350px;
         min-width: initial;
-        width:350px;
+        width:500px;
         height: 500px;
         margin-bottom: 100px;
+    }
+
+    .temario .temariolist .box .imgBx {
+        position: relative;
+        min-width: initial;
+        width: 100%;
+        height: 500px;
+        margin-bottom: 100px;
+    }
+
+
+    .temario .temariolist .box .content {
+    width: 300px;
     }
 
     .temario .temariolist .box .content h2 {
@@ -312,3 +326,5 @@ section{
     }
 
 }
+
+
