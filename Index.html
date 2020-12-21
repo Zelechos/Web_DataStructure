@@ -1,167 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Data Structure</title>
-        <link rel="stylesheet" type="text/css" href="./Css/Style.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!--Css-->
+    <link rel="stylesheet" href="./Css/Style.css">
+    <!--JavaScript-->
+    <script src="./Js/Main.js"></script>
+
+    <title>Estructura de Datos</title>
     </head>
-    <body>
 
-        <!--Header-->
-        <section class="header">
-            <a href="#" class="logo"><h2>Estructura de Datos</h2></a>
-            <div class="toggle"><img src="./Img/toggle.png"></div>
-        </section>
+    <body data-spy="scroll" data-target="#navbar-example">
+        <section class="container col-md-12">    
+        <div class="row">
+                    <div class="col-md-12 bg-dark obj">
+                        <h1 class="text-white text-center display-6">Aprende Estructura de Datos en Cualquier  <br><span class="badge badge-secondary">Lenguaje de Programacion</span></h1>
+                        <h5 class = "display-6 text-center"><span class="badge badge-warning ">Por: Pragmatic Coder</span>
 
-        <!--Banner-->
-        <section class="banner">
-            <img src="./Img/banner.png" class="fitBg">
-            <div class="content">
-                <h2>Estructuras de Datos</h2>
-                <p>
-                    Descubre un Mundo Nuevo, En Ciencias de la computacion, una estructura de datos es una forma 
-                    particular de organizar datos en una computadora para que puedan ser utilizados de manera eficiente
-                    Diferentes tipos de estructuras de datos son adecuadas para diferentes tipos de aplicaciones, y
-                    algunos son altamente especializados para tareas especificas.
-                </p>
-                <a href="#about"  class="btn">Aprende mas</a>
-            </div>
-        </section>
+                    <!--Lenguajes-->
+                        <button type="button" class="btn btn-primary dropdown-toggle col-md-2 trans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Lenguajes
+                        </button>
+                        <div class="dropdown-menu col-md-2  text-center text-size-4 bg-dark">
+                            <a class="dropdown-item  p-2 bg-warning text-dark" href="#">Python</a>
+                            <a class="dropdown-item  p-2 bg-primary text-white" href="#">Java</a>
+                            <a class="dropdown-item  p-2 bg-danger text-white" href="#">JavaScript</a>
+                            <a class="dropdown-item  p-2 bg-info text-white" href="#">C++</a>
+                            <a class="dropdown-item  p-2 bg-success text-dark" href="#">C#</a>
+                            <a class="dropdown-item  p-2 bg-dark text-white" href="#">C</a>
+                        </div>
+                    </div>
 
-        <!--About-->
-        <section class="about" id="about">
-            <div class="contentBx">
-                <h2 class="titleText">Estructura de Datos Basicas</h2>
-                    <p class="text">
-                        Las estructuras de datos son un medio para manejar grandes cantidades de datos de manera eficiente para usos tales como grandes bases de datos y servicios de indización de Internet. Por lo general, las estructuras de datos eficientes son clave para diseñar algoritmos eficientes. Algunos métodos formales de diseño y lenguajes de programación destacan las estructuras de datos, en lugar de los algoritmos, como el factor clave de organización en el diseño de software.
-                        Hoy conoceremos las Estructuras de Datos Basicas que todo Programador deberia Conocer estas son:  <br><br>
-                        Vectores o Arrays<br>
-                        Lista Enlazada<br>
-                        Tablas de Hash<br>
-                        Pilas & Colas<br>
-                        Grafos & Arboles<br>
-                        Heaps<br>
-                    </p>
-                <h2 class="titleText">¿Por qué son útiles las estructuras de datos?</h2> 
-                    <p class="text">Las estructuras de datos son útiles porque nos permiten tener una batería de herramientas para solucionar ciertos tipos de problemas.
-                        Además, nos permiten hacer un software más eficiente optimizando recursos, algo muy útil para IoT y para los entornos que trabajan con Big Data.
-                    </p>
-                    <br>
+                            <!--Lista-->
+                            <div id="list-example" class="list-group col-md-2 text-center  bg-dark ">
+                                <a class="list-group-item list-group-item-action " href="#list-item-1">Listas Enlazadas</a>
+                                <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+                                <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+                                <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+                                <a class="list-group-item list-group-item-action" href="#list-item-5">Item 4</a>
+                                <a class="list-group-item list-group-item-action" href="#list-item-6">Item 4</a>
+                                <a class="list-group-item list-group-item-action" href="#list-item-7">Item 4</a>
+                            </div>
 
-            <h2 class="titleText">Su relación con los lenguajes</h2>  
-    <p class="text">Comprender la utilidad de la estructura de datos está relacionado con saber también qué tipo de relación tienen con los lenguajes de programación. En este sentido hay que dejar totalmente de lado los lenguajes de bajo nivel, dado que no tienen soporte para estas estructuras.
-    Los que sí la tienen son los lenguajes de alto nivel, además de algunas excepciones que no resultan trascendentes. Una buena demostración de este tipo de relación entre estructuras y lenguaje la podemos ver en dos lenguajes muy específicos que se utilizan en la actualidad y que siguen siendo de gran rendimiento: Pascal y C. Este tipo de soporte siempre ha ayudado a los programadores y con el paso del tiempo las propias plataformas que acompañan a los lenguajes modernos han ido dando soporte a estas estructuras de manera interna, permitiendo así que sigan presentes para aprovecharlas en sus respectivos contextos. El lenguaje C++, por ejemplo, dispone de estructuras de datos en su biblioteca Standard Template Library.  </p>
-                <a href="#temario" class="btn">Mas Informacion</a>
-            </div>
-            <br>
-            <div class="imgBx">
-                <img src="./Img/img1.png" class="fitBg">
-            </div>
-        </section>
+                            <!--Contenido Lista-->
+                            <div id= "conte" data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example col-md-10 ">
+                                <h4 id="list-item-1">Listas Enlazadas</h4>
+                                    <p id= "contenido1"></p>
 
-        <!--Banner2-->
-        <section class="banner2">
-                <img src="./Img/black.gif" alt="" class="fitBg">
-        </section>
+                                <h4 id="list-item-2">Item 2</h4>
+                                    <p>..Lorem Ipsum es simplemente un texto ficticio de la industria de impresión y composición tipográfica. Lorem Ipsum ha sido el texto ficticio estándar de la industria desde el año 1500, cuando una impresora desconocida tomó una galera de tipo y la revolvió para hacer un libro de muestras. Ha sobrevivido no solo cinco siglos, sino también el salto a la composición electrónica, permaneciendo esencialmente sin cambios. Se popularizó en la década de 1960 con el lanzamiento de las hojas de Letraset que contienen pasajes de Lorem Ipsum, y más recientemente con software de publicación de escritorio como Aldus PageMaker que incluye versiones de Lorem Ipsum.
+                                        ¿Por qué lo usamos?
+                                        Es un hecho establecido desde hace mucho tiempo que un lector se distraerá con el contenido legible de una página al mirar su diseño. El punto de usar Lorem Ipsum es que tiene una distribución de letras más o menos normal, en lugar de usar 'Contenido aquí, contenido aquí', lo que hace que parezca un inglés legible. Muchos paquetes de edición de escritorio y editores de páginas web ahora usan Lorem Ipsum como su texto modelo predeterminado, y una búsqueda de 'lorem ipsum' descubrirá muchos sitios web aún en su infancia. Varias versiones han evolucionado a lo largo de los años, a veces por accidente, a veces a propósito (humor inyectado y similares).
+                                        ¿De dónde viene?.</p>
 
-        <!--Temario-->
-        <section class="temario" id="temario">
-            <div class="content">
-                <h2 class="titleText">Aprende las Estructuras de Datos</h2>
-                <p class="text">
-                    ¿Por qué son útiles las estructuras de datos?
-                    Las estructuras de datos son útiles porque nos permiten tener una batería de herramientas para solucionar ciertos tipos de problemas.
+                                <h4 id="list-item-3">Item 3</h4>
+                                    <p>..Lorem Ipsum es simplemente un texto ficticio de la industria de impresión y composición tipográfica. Lorem Ipsum ha sido el texto ficticio estándar de la industria desde el año 1500, cuando una impresora desconocida tomó una galera de tipo y la revolvió para hacer un libro de muestras. Ha sobrevivido no solo cinco siglos, sino también el salto a la composición electrónica, permaneciendo esencialmente sin cambios. Se popularizó en la década de 1960 con el lanzamiento de las hojas de Letraset que contienen pasajes de Lorem Ipsum, y más recientemente con software de publicación de escritorio como Aldus PageMaker que incluye versiones de Lorem Ipsum.
+                                        ¿Por qué lo usamos?
+                                        Es un hecho establecido desde hace mucho tiempo que un lector se distraerá con el contenido legible de una página al mirar su diseño. El punto de usar Lorem Ipsum es que tiene una distribución de letras más o menos normal, en lugar de usar 'Contenido aquí, contenido aquí', lo que hace que parezca un inglés legible. Muchos paquetes de edición de escritorio y editores de páginas web ahora usan Lorem Ipsum como su texto modelo predeterminado, y una búsqueda de 'lorem ipsum' descubrirá muchos sitios web aún en su infancia. Varias versiones han evolucionado a lo largo de los años, a veces por accidente, a veces a propósito (humor inyectado y similares).
+                                        ¿De dónde viene?.</p>
+                                        
+                                <h4 id="list-item-4">Item 4</h4>
+                                    <p>...</p>
+                                </div>
+                            
                     
-                    Además, nos permiten hacer un software más eficiente optimizando recursos, algo muy útil para IoT y para los entornos que trabajan con Big Data.
-                </p>
-            </div>
-            
-            <!--Lista del Temario-->
-            <div class="temariolist">
 
-                <!--Vectores o Arrays-->
-                <div class="box">
-                    <div class="imgBX">
-                        <img src="./Img/VectoresArrays.png" class="fitBg" >
-                    </div>
-                    <div class="content">
-                        <h2>Vectores o Arrays<br><span>Tema 1</span></h2>
-                    </div>
+
+                    <!--Navegacion-->
+                    <div class="col-md-12 bg-warning">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item ">
+                                    <a class="page-link" onclick=Low(); tabindex="-1" aria-disabled="true">Previous</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" onclick= "EventNav(0);" >1</a></li>
+                                <li class="page-item"><a class="page-link" onclick= "EventNav(1);" >2</a></li>
+                                <li class="page-item"><a class="page-link" onclick= "EventNav(2);" >3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" onclick=Plus();>Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>  
+
                 </div>
 
-                <!--Listas Enlazadas-->
-                <div class="box">
-                    <div class="imgBX">
-                        <img src="./Img/VectoresArrays.png" class="fitBg" >
-                    </div>
-                    <div class="content">
-                        <h2>Listas Enlazadas<br><span>Tema 2</span></h2>
-                    </div>
-                </div>
-
-                <!--Tablas de Hash-->
-                <div class="box">
-                    <div class="imgBX">
-                        <img src="./Img/VectoresArrays.png" class="fitBg" >
-                    </div>
-                    <div class="content">
-                        <h2>Tablas de Hash<br><span>Tema 3</span></h2>
-                    </div>
-                </div>
+                </section>
 
 
-                <!--Pilas & Colas-->
-                <div class="box">
-                    <div class="imgBX">
-                        <img src="./Img/VectoresArrays.png" class="fitBg" >
-                    </div>
-                    <div class="content">
-                        <h2>Pilas & Colas<br><span>Tema 4</span></h2>
-                    </div>
-                </div>
-                
-                
-                <!-- Grafos & Arboles-->
-                <div class="box">
-                    <div class="imgBX">
-                        <img src="./Img/VectoresArrays.png" class="fitBg" >
-                    </div>
-                    <div class="content">
-                        <h2>Grafos & Arboles<br><span>Tema 5</span></h2>
-                    </div>
-                </div>
 
-                <!--Heaps-->
-                <div class="box">
-                    <div class="imgBX">
-                        <img src="./Img/VectoresArrays.png" class="fitBg" >
-                    </div>
-                    <div class="content">
-                        <h2>Heaps<br><span>Tema 6</span></h2>
-                    </div>
-                </div>
-
-            </div>
-            <a href="#nodo" class="btn">Mas Informacion</a>
-        </section>
-
-        <!--Banner3-->
-        <section class="banner3 " id="nodo" >
-            <img src="./Img/black.gif" alt="" class="fitBg">
-        </section>
-
-        <!--Footer-->
-        <section class="footer">
-            <ul class="sci">
-                <li><a href="https://www.facebook.com/PragmaticCodersGroup/" target="_blank"><img src="./Img/facebook.png"></a></li>
-                <li><a href="https://www.youtube.com/channel/UCQ1D3FO4ICg6SVivOTwIe4w?view_as=subscriber" target="_blank"><img src="./Img/youtube.png"></a></li>
-                <li><a href="https://github.com/Zelechos" target="_blank"><img src="./Img/github.png" ></a></li>
-                <li><a href="https://www.instagram.com/zelechos/?hl=es-la" target="_blank"><img src="./Img/instagram.png" ></a></li>
-            </ul>
-            <h4 class="copyrightText">Copyright ©2020 <a href="#">Pragmatic Coder</a>. All rights reserved.</h4>
-        </section>
 
         
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     </body>
 </html>
